@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "dependencies": {
+    "ejs": "^1.0.0",
+    "nodemon": "^1.2.1",
+    "express": "^4.10.4",
+    "html": "^0.0.7",
+    "nodemailer": "~0.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "fredkhoury.me"
+  ],
+  "author": "Fredrick Khoury <fredk1018@gmail.com>",
+  "license": "ISC"
+}
