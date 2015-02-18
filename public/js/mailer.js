@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(function(){
     var from,to,subject,text;
-    $("#send_email").click(function(){      
+    $("#send-email").click(function(){      
         to= "fredk1018@gmail.com";
         subject="NO-REPLY From FredKhoury.me, ("+$("#phone").val()+")"+$("#name").val()+" <"+$("#email").val()+"> has sent you a message."
         text=$("#message").val();

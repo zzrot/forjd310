@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var nodemailer = require("nodemailer");
+var mime = require("mime");
 var app = express();
 var smtpTransport = nodemailer.createTransport("SMTP",{
 service: "Gmail",
@@ -20,8 +21,9 @@ app.use(express.static(root + '/bower_components'));
 app.get('',function(req,res){
         res.render('../public/views/index.html')
 });
-app.get('/send',function(req,res){
 
+
+app.get('/send',function(req,res){
 var mailOptions={
 to : req.query.to,
 subject : req.query.subject,
@@ -40,6 +42,15 @@ res.end("sent");
 
 
 });
+
+app.get('/resume', function(req, res){
+  var file = root + '/public/upload-folder/Khoury_Fredrick_Resume.pdf';
+  res.download(file); // Set disposition and send it.
+});
+
+
+
+
  
 app.env
 //server
