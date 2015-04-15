@@ -6,8 +6,8 @@ var app = express();
 var smtpTransport = nodemailer.createTransport("SMTP",{
 service: "Gmail",
 auth: {
-user: "fred.khoury.mailer@gmail.com",
-pass: "fkdasite"
+user: "YOUREMAIL@gmail.com",
+pass: "PASSWORD TO GMAIL ACT GOES HERE"
 }
 });
 var root = path.normalize(__dirname + '/..');
